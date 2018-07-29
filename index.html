@@ -1,46 +1,99 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html ⚡>
 <head>
-  
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width">
-    <link rel="icon" href='https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Noun_project_1130.svg/600px-Noun_project_1130.svg.png'>
- <title>Yotpo Rules!</title>
-   
-    
-  <script type="text/javascript">
-(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/TqxMFOvoslSmh4giN7OIcL6aC0EUyyuuYCAJuGRx/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
-</script>
-    
+  <meta charset="utf-8">
+  <title>amp-yotpo example</title>
+  <link rel="canonical" href="amps.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+    amp-yotpo {
+      color: red;
+    }
+  </style>
+  <script async custom-element="amp-yotpo" src="https://cdn.ampproject.org/v0/amp-yotpo-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 <body>
-   
-    <div class="yotpo yotpo-main-widget"
-data-product-id="1"
-data-name="Product Title"
-data-url="The url to the page where the product is (url escaped)"
-data-image-url="The product image url. Url escaped"
-data-description="Product description">
-</div>
-    
-    <div style='background-color: aliceblue; height: 600px;'> </div>
-    
-    <div id="yotpo" class="yotpo yotpo-reviews-carousel" 
- data-background-color="transparent" 
- data-mode="top_rated" 
- data-type="both" 
- data-count="9" 
- data-show-bottomline="1" 
- data-autoplay-enabled="1" 
- data-autoplay-speed="3000" 
- data-show-navigation="1">&nbsp;</div>
 
+<h1> Star Ratings: </h1>
+  <amp-yotpo
+          width="550"
+          height="100"
+          data-app-key="TqxMFOvoslSmh4giN7OIcL6aC0EUyyuuYCAJuGRx"
+          data-widget-type="BottomLine"
+          data-product-id="1">
+</amp-yotpo>
 
- <script> 
-     yotpo.initWidgets();
-     console.log(yotpo)
-    
-    </script>
- 
+<hr>
+<h1> Main Widget </h1>
+  <amp-yotpo
+          width="550"
+          height="500"
+          layout="responsive"
+          data-app-key="TqxMFOvoslSmh4giN7OIcL6aC0EUyyuuYCAJuGRx"
+          data-widget-type="MainWidget"
+          data-product-id="1"
+          data-name="iPad 4 mini"
+          data-url="https://yotpos-demo-store-2.myshopify.com/products/ipad-4-mini"
+          data-image-url="//cdn.shopify.com/s/files/1/1438/6792/products/28baa67f-7a5a-48d1-a0fc-6d5305924039_1.ebdff582719ea3a94a302c79e6213250_large.jpg%3Fv=1471341736"
+          data-descriptipn="There's more to mini than meets the eye. The new iPad mini 4 puts uncompromising performance and potential in your hand. It's thinner and lighter than ever before, yet powerful enough to help you take your ideas even further."
+          data-yotpo-element-id="1">
+  </amp-yotpo>
+
+  <hr>
+
+  <h1> Pictures Gallery </h1>
+
+  <amp-yotpo
+          width="1000"
+          height="700"
+          layout="responsive"
+          data-app-key="TqxMFOvoslSmh4giN7OIcL6aC0EUyyuuYCAJuGRx"
+          data-widget-type="PicturesGallery"
+          data-layout="full_page"
+          data-layout-scroll="1"
+          data-spacing="0"
+          data-source="all"
+          data-title="0"
+          data-hover-color="#ffffff"
+          data-hover-opacity="0.8"
+          data-hover-icon="true"
+          data-cta-text="Shop Now"
+          data-cta-color="#2f84ed">
+  </amp-yotpo>
+
+  <hr>
+
+  <h1> Embedded Widgets </h1>
+
+  <amp-yotpo
+          width="1280"
+          height="300"
+          data-app-key="TqxMFOvoslSmh4giN7OIcL6aC0EUyyuuYCAJuGRx"
+          data-widget-type="EmbeddedWidget"
+          data-product-id="1"
+          data-demo="true"
+          data-width="100"
+          data-layout="basic"
+          data-reviews="5"
+          data-header-text="Top Rated Products"
+          data-header-background-color="919191"
+          data-body-background-color="black"
+          data-font-size="18"
+          data-font-color="black"
+          data-yotpo-element-id="1">
+  </amp-yotpo>
+
+  <hr>
+
+  <h1> Yotpo Badge </h1>
+
+  <amp-yotpo
+          width="200"
+          height="200"
+          data-app-key="TqxMFOvoslSmh4giN7OIcL6aC0EUyyuuYCAJuGRx"
+          data-widget-type="Badge">
+  </amp-yotpo>
 </body>
 </html>
